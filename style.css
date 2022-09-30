@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+svg {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* --------------------------- SVG --------------------------------- */
+
+#eyes {
+    animation: eyes 3.5s ease-in-out infinite ;
+    animation-delay: -1s ;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#eyebrows {
+    animation: eyebrows 3.5s ease-out infinite ;
+    animation-delay: -1s ;
+}
+
+#Lhair {
+    animation: Lhair 5s ease-in-out infinite ;
+    transform-origin: right top;
+    transform-box: fill-box;
+    animation-delay: -1s ;
+}
+
+#Rhair {
+    animation: Rhair 5s ease-in-out infinite ;
+    transform-origin: top;
+    transform-box: fill-box;
+    animation-delay: -0.5s ;
+}
+
+#leaf1 {
+    animation: leaf1 8s ease-in-out infinite ;
+    animation-delay: 1s;
+}
+#leaf2 {
+    animation: leaf1 7s ease-in-out infinite ;
+    animation-delay: 2s;
+}
+#leaf3 {
+    animation: leaf1 7s ease-in-out infinite ;
+    
+}
+#leaf4 {
+    animation: leaf1 7s ease-in-out infinite ;
+    animation-delay: 4s;
+}
+
+/* --------------------------- KEYFRAMES --------------------------------- */
+
+@keyframes eyes {
+    0%{transform: scaleY(1) }
+    85%{transform: scaleY(1) }
+    90%{transform:  scaleY(0.1) translateY(3px) rotateZ(5deg) }
+    100%{transform: scaleY(1) }
+}
+
+@keyframes eyebrows {
+    0%{transform: translateY(0px) }
+    85%{transform:  translateY(0px) }
+    90%{transform: translateY(2px) }
+    100%{transform: translateY(0px) }
+}
+
+@keyframes Lhair {
+    0%{transform: rotateZ(0deg) }
+    50%{transform:  rotateZ(-10deg) }
+    100%{transform:  rotateZ(0deg) }
+}
+
+@keyframes Rhair {
+    0%{transform: rotateZ(0deg) }
+    50%{transform:  rotateZ(-6deg) }
+    100%{transform:  rotateZ(0deg) }
+}
+
+@keyframes leaf1 {
+    0%{transform: translateX(0px) translateY(0px) }
+    /* 50%{transform:  translateX() translateY() } */
+    100%{transform:  translateX(1000px) translateY(1000px) }
+}
